@@ -1,0 +1,9 @@
+/target
+/.settings
+/bin
+/metastore_db
+.classpath
+.project
+derby.log
+.cache-main
+.cache-tests
