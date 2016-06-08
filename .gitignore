@@ -7,3 +7,4 @@ target
 derby.log
 .cache-main
 .cache-tests
+.history
