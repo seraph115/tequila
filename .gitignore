@@ -2,8 +2,6 @@
 /.settings
 /bin
 /metastore_db
-/project
-/bin
 .classpath
 .project
 derby.log
