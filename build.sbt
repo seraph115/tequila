@@ -8,6 +8,8 @@ resolvers += "Local Maven Repository" at "file://"+Path.userHome.absolutePath+"/
 
 resolvers += "Bigbata" at "http://nexus.bigbata.com/nexus/content/groups/public/"
 
+resolvers += "Job Server Bintray" at "https://dl.bintray.com/spark-jobserver/maven"
+
 credentials += Credentials(Path.userHome / ".ivy2" / ".credentials")
 
 libraryDependencies += "org.apache.spark" % "spark-core_2.11" % "1.6.1"
@@ -19,6 +21,12 @@ libraryDependencies += "org.apache.spark" % "spark-hive_2.11" % "1.6.1"
 libraryDependencies += "org.apache.spark" % "spark-mllib_2.11" % "1.6.1"
 
 libraryDependencies += "org.apache.hadoop" % "hadoop-client" % "2.7.2"
+
+libraryDependencies += "org.scalactic" %% "scalactic" % "2.2.6"
+
+libraryDependencies += "org.scalatest" %% "scalatest" % "2.2.6" % "test"
+
+libraryDependencies += "spark.jobserver" %% "job-server-api" % "0.6.2" % "provided"
 
 libraryDependencies += "org.ansj" % "ansj_seg" % "3.0"
 
